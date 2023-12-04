@@ -1,270 +1,190 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!DOCTYPE html> 
+<html lang="en"> 
 
-    <!-- Web page CSS -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+<head> 
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+	<meta name="viewport" content= 
+		"width=device-width, initial-scale=1.0"> 
+	<link rel="stylesheet" href="index.css"> 
+	<title>Landing Page</title> 
+</head> 
 
-    <!-- Simple lightbox CSS -->
-    <link rel="stylesheet" href="assets/css/simple-lightbox.min.css" />
+<body> 
+	<nav> 
+		<div class="heading">Landing Page</div> 
+		<span class="sideMenuButton"
+			onclick="openNavbar()"> 
+			☰ 
+		</span> 
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="/Landing page/assets/icons/favicon_io (1)/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="/Landing page/assets/icons/favicon_io (1)/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="/Landing page/assets/icons/favicon_io (1)/favicon-16x16.png"
-    />
+		<div class="navbar"> 
+			<ul> 
+				<li><a href="#Home">Home</a></li> 
+				<li><a href="#">About</a></li> 
+				<li><a href="#">Sign Up</a></li> 
+			</ul> 
+		</div> 
+	</nav> 
 
-    <title>Jewellery Saloon Landing Page</title>
-  </head>
-  <body>
-    <!-- Navbar -->
-    <nav>
+	<!-- Side navigation bar for 
+		responsive website -->
+	<div class="sideNavigationBar"
+		id="sideNavigationBar"> 
+		<a href="#" class="closeButton"
+			onclick="closeNavbar()"> 
+			 
+		</a> 
+		<a href="#">Home</a> 
+		<a href="#">About</a> 
+		<a href="#">Sign Up</a> 
+	</div> 
 
-      <div class="logo">
-        <a href="#">
-          <img src="/Landing page/assets/images/logots.png" alt="logo">
-          Jewellery Saloon
-        </a>
+	<!-- Content -->
+	<div class="line" id="Home"> 
+		<div class="side1"> 
+			<h1>GeeksforGeeks</h1> 
+			<button> 
+				<a href= 
+"https://www.geeksforgeeks.org/"> 
+					Explore More 
+				</a> 
+			</button> 
+		</div> 
+		<div class="side2"> 
+			<img src= 
+"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png"
+				width="500"> 
+		</div> 
+	</div> 
 
-      </div>
-       
+	<section class="about" id="My Projects"> 
+		<div class="content"> 
+			<div class="title"> 
+				<span>Courses</span> 
+			</div> 
+			<div class="boxes"> 
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							DSA 
+						</a> 
+					</div> 
+					<p> 
+						The term DSA stands for Data 
+						Structures and Algorithms. As 
+						the name itself suggests, it 
+						is a combination of two 
+						separate yet interrelated 
+						topics. 
+					</p> 
+				</div> 
+				<div class="box"> 
 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							HTML 
+						</a> 
+					</div> 
+					<p> 
+						HTML stands for HyperText 
+						Markup Language. It is used 
+						to design web pages using 
+						the markup language. 
+					</p> 
+				</div> 
 
-        <!-- Dark/light theme switcher -->
+				<div class="box"> 
+					<div class="topic"> 
+						<a href="" target="_blank"> 
+							Javascript 
+						</a> 
+					</div> 
+					<p> 
+						JavaScript (JS) is the most 
+						popular lightweight, interpreted 
+						compiled programming language. 
+					</p> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
 
-        <div class="theme-switch">
-            <input type="checkbox" class="checkbox" id="checkbox" />
-            <label for="checkbox" class="label">
-               <ion-icon name="partly-sunny-outline" class="sun"></ion-icon>
-               <ion-icon name="moon-outline" class="moon"></ion-icon>
-               <div class="switcher"></div>
-            </label>
-        </div>
+	<section class="contact" id="contact"> 
+		<div class="content"> 
+			<div class="title"><span>Sign Up</span></div> 
+			<div class="contactMenu"> 
+				<div class="input1"> 
+					<div class="label1">Your Name</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Name here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Email</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Email here"> 
+					</div> 
+					<div class="label1"> 
+						<label>Your Password</label> 
+					</div> 
+					<div class="input2"> 
+						<input type="text"
+							placeholder="Enter your Password here"> 
+					</div> 
+					<div class="button"> 
+						<button>Sign Up</button> 
+					</div> 
+				</div> 
+				<div class="input3"> 
+					<div class="rightside1"> 
+						<div class="title1"> 
+							<span> 
+								Contact Us 
+							</span> 
+						</div> 
+						<div class="content1"> 
+							A-143, 9th Floor, Sovereign 
+							Corporate Tower, Sector-136, 
+							Noida, Uttar Pradesh - 201305 
+						</div> 
+						<div class="title1"> 
+							<span>More Information</span> 
+						</div> 
+						<div class="content1"> 
+							Greetings to all the Geeks out there! 
+							We welcome you to the platform where we 
+							consistently strive to offer the best 
+							of education. This platform has been 
+							designed for every geek wishing to 
+							expand their knowledge, share their 
+							knowledge and is ready to grab their 
+							dream job. We have millions of articles, 
+							live as well as online courses, thousands 
+							of tutorials and much more just for the 
+							geek inside you.Thank you for choosing 
+							and supporting us! 
+						</div> 
+					</div> 
+				</div> 
+			</div> 
+		</div> 
+	</section> 
+	<!-- Footer section -->
+	<footer> 
+		<div class="footer"> 
+			<span> 
+				Created By 
+				<a href="https://www.geeksforgeeks.org/"
+					target="_blank"> 
+					GeeksforGeeks 
+				</a> 
+			</span> 
+		</div> 
+	</footer> 
+	<script src="index.js"></script> 
+</body> 
 
-        <ul>
-            <li class="nav-item">
-              <a href="#about" class="nav-link" id="nav-link">About</a>
-            </li>
-            <li class="nav-item">
-              <a href="#stars" class="nav-link" id="nav-link">Boxing Stars</a>
-            </li>
-            <li class="nav-item">
-              <a href="#stakeholders" class="nav-link" id="nav-link"
-                >stakeholders</a
-              >
-            </li>
-            <li class="nav-item">
-              <a href="#sub" class="nav-link" id="nav-link">Subscribe</a>
-            </li>
-        </ul>    
-        
-        <!-- Bars -->
-        
-        <div class="hamburger" id="hamburger">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-        </div>
-    </nav>
-  
-
-    
-
-    
-    
-    
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="intro-text">
-          <h1>
-            <span class="hear"> You can Hear the Jabs </span> <br />
-            <span class="connecting"> Connecting</span>
-          </h1>
-          <p>
-            An online streaming platform for boxing matches <br />
-            We also dedicate some special time to throwbacks cuz old is gold
-          </p>
-          <a class="btn red" href="#about">Learn More</a>
-          <a class="btn blue" href="#sub">Subscribe</a>
-        </div>
-        <div class="i-frame">
-          <iframe 
-          width="560" 
-          height="315"
-          src="https://www.youtube.com/embed/eeEC9JYHCfo?si=2ypYPUZ_16Yq_XJw" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; 
-          autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen></iframe>
-          <div class="stand-1"></div>
-          <div class="stand-2"></div>
-        </div>
-      </section>
-
-    <!-- About section -->
-
-    <section class="about" id="about">
-        <h3>Watch the Jabs</h3>
-        <p>
-          Our primary objective is to bring live boxing matches to fans all around
-          the world
-        </p>
-  
-        <h3>Its not About the Fights Alone!</h3>
-        <p>
-          We also air documentaries specially made for the greats, lifestyle of
-          boxers, news, and more.
-        </p>
-    </section>
-
-    <!-- Lightbox image gallery -->
-    <section class="stars" id="stars">
-        <div class="stars-gallery">
-          <a href="/Landing page/assets/images/ring1.jpg" class="big">
-            <img
-              src="/Landing page/assets/images/ring1.jpg"
-              alt="Anthony Joshua"
-              title="AJ"
-            />
-          </a>
-  
-          <a href="/Landing page/assets/images/ring2.jpg" class="big">
-            <img
-              src="/Landing page/assets/images/ring2.jpg"
-              alt="Tyson Fury"
-              title="Gypsy King"
-            />
-          </a>
-  
-          <a href="/Landing page/assets/images/ring3.jpg" class="big">
-            <img
-              src="/Landing page/assets/images/ring3.jpg"
-              alt="Iron Mike"
-              title="Iron Mike"
-            />
-          </a>
-  
-          <a href="/Landing page/assets/images/ring4.jpg" class="big">
-            <img
-              src="/Landing page/assets/images/ring4.jpg"
-              alt="Mohammed Ali"
-              title="The Greatest"
-            />
-          </a>
-  
-          <a href="/Landing page/assets/images/ring5.jpg" class="big"
-            ><img
-              src="/Landing page/assets/images/ring5.jpg"
-              alt="Deontay Wilder"
-              title="Bronze Bomber"
-            />
-          </a>
-  
-          <a href="/Landing page/assets/images/ring6.jpg" class="big">
-            <img
-              src="/Landing page/assets/images/ring6.jpg"
-              alt="George Foreman"
-              title="Big George Foreman"
-            />
-          </a>
-        </div>
-    </section>
-    <!-- Jab TV Stakeholders -->
-    <section class="people" id="stakeholders">
-        <div class="stakeholders">
-          <div class="persons">
-            <div class="person-1">
-              <img src="assets/images/john.jpg" alt="John Doe" />
-              <p class="name">John Doe</p>
-              <p class="role">Founder</p>
-            </div>
-            <div class="person-2">
-              <img src="assets/images/jane.jpg" alt="Jane Doe" />
-              <p class="name">Jane Doe</p>
-              <p class="role">MD</p>
-            </div>
-            <div class="person-3">
-              <img src="assets/images/jnr.jpg" alt="John Doe Jnr" />
-              <p class="name">John Doe JNR</p>
-              <p class="role">Head Analyst</p>
-            </div>
-          </div>
-        </div>
-  </section>
-
-    <!-- Email subscription -->
-    <section class="sub" id="sub">
-        <h3>Subscribe to our newsletter for updates</h3>
-        <form action="#">
-          <input
-            type="email"
-            name="email"
-            id="email-sub"
-            class="email-sub"
-            required
-          />
-          <input
-            type="submit"
-            value="Subscribe"
-            id="submit-btn"
-            class="submit-btn"
-          />
-        </form>
-  </section>
-    <!-- Social icons -->
-    <section class="social">
-        <h3>Connect with us on Social Media</h3>
-        <div class="socicons">
-          <a href="#"> <ion-icon name="logo-twitter"></ion-icon> </a>
-          <a href="#"> <ion-icon name="logo-instagram"></ion-icon> </a>
-          <a href="#"> <ion-icon name="logo-facebook"></ion-icon> </a>
-        </div>
-  </section>
-
-  <footer>&copy;2020. All Rights Reserved</footer>
-
-    <!-- Scroll to top button -->
-    <i class="scroll-up" id="scroll-up"
-    ><img
-      src="assets/icons/icons8-upward-arrow.png"
-      class="socicon up-arrow"
-      alt="up-arrow"
-    /></i>
-    <!-- Web page script -->
-    <script src="assets/js/apps.js"></script>
-
-    <!-- Ion icons CDN -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-
-    <!-- Simple lightbox -->
-    <script src="assets/js/simple-lightbox.min.js"></script>
-      
-    <!-- Simple lightbox initializer -->
-    <script>
-        var lightbox = new SimpleLightbox(".stars-gallery a");
-   </script>
-
-
-    </script>
-  </body>
 </html>
