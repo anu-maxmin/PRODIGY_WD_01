@@ -17,7 +17,7 @@ nav {
 	display: flex; 
 	justify-content: space-between; 
 	padding: 20px 5%; 
-	background-color: #8cc099; 
+	background-image: linear-gradient(to right, pink,indigo,violet); 
 } 
 
 nav .heading { 
