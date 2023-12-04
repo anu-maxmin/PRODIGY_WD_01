@@ -6,13 +6,13 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
 	<meta name="viewport" content= 
 		"width=device-width, initial-scale=1.0"> 
-	<link rel="stylesheet" href="index.css"> 
+	<link rel="stylesheet" href="style.css"> 
 	<title>Landing Page</title> 
 </head> 
 
 <body> 
 	<nav> 
-		<div class="heading">Landing Page</div> 
+		<div class="heading">Artificial Inteligence</div> 
 		<span class="sideMenuButton"
 			onclick="openNavbar()"> 
 			☰ 
@@ -21,96 +21,108 @@
 		<div class="navbar"> 
 			<ul> 
 				<li><a href="#Home">Home</a></li> 
-				<li><a href="#">About</a></li> 
-				<li><a href="#">Sign Up</a></li> 
+				<li><a href="#MyProjects">About</a></li> 
+				<li><a href="#contact">Sign Up</a></li> 
 			</ul> 
 		</div> 
 	</nav> 
 
 	<!-- Side navigation bar for 
 		responsive website -->
-	<div class="sideNavigationBar"
-		id="sideNavigationBar"> 
-		<a href="#" class="closeButton"
-			onclick="closeNavbar()"> 
-			 
-		</a> 
-		<a href="#">Home</a> 
-		<a href="#">About</a> 
-		<a href="#">Sign Up</a> 
-	</div> 
+    <div class="sideNavigationBar" 
+        id="sideNavigationBar"> 
+        <a href="#" class="closeButton" 
+            onclick="closeNavbar()"> 
+            ❌ 
+        </a> 
+        <a href="#Home">Home</a> 
+        <a href="#MyProjects">About</a> 
+        <a href="#contact">Sign Up</a> 
+    </div> 
+    
 
 	<!-- Content -->
 	<div class="line" id="Home"> 
 		<div class="side1"> 
-			<h1>GeeksforGeeks</h1> 
+			<h1>Artificial Inteligence</h1> 
+      <p>While a number of definitions of artificial intelligence (AI) have surfaced over the last few decades, John McCarthy offers the following definition in this 2004 paper (link resides outside ibm.com), " It is the science and engineering of making intelligent machines, especially intelligent computer programs. It is related to the similar task of using computers to understand human intelligence, but AI does not have to confine itself to methods that are biologically observable."</p>
 			<button> 
-				<a href= 
-"https://www.geeksforgeeks.org/"> 
+				<a href=
+"https://www.ibm.com/topics/artificial-intelligence#:~:text=What%20is%20artificial%20intelligence%20(AI)%3F,capabilities%20of%20the%20human%20mind"> 
 					Explore More 
 				</a> 
 			</button> 
 		</div> 
 		<div class="side2"> 
-			<img src= 
-"https://media.geeksforgeeks.org/wp-content/cdn-uploads/20220401124017/HTML-Tutorial.png"
-				width="500"> 
+			<img src= "images/side2.jpg"> 
 		</div> 
 	</div> 
 
-	<section class="about" id="My Projects"> 
+	<div class="about" id="MyProjects"> 
 		<div class="content"> 
 			<div class="title"> 
-				<span>Courses</span> 
+				<span>Application</span> 
 			</div> 
 			<div class="boxes"> 
 				<div class="box"> 
 					<div class="topic"> 
 						<a href="" target="_blank"> 
-							DSA 
+							Speech recognition 
 						</a> 
 					</div> 
-					<p> 
-						The term DSA stands for Data 
-						Structures and Algorithms. As 
-						the name itself suggests, it 
-						is a combination of two 
-						separate yet interrelated 
-						topics. 
+					<p class="decri"> 
+						It is also known as automatic speech recognition (ASR),
+            computer speech recognition, or speech-to-text,
+            and it is a capability which uses natural language 
+            processing (NLP) to process human speech into a written 
+            format. Many mobile devices incorporate speech recognition into 
+            their systems to conduct voice search—e.g. Siri—or provide more 
+            accessibility around texting. 
 					</p> 
 				</div> 
 				<div class="box"> 
 
 					<div class="topic"> 
 						<a href="" target="_blank"> 
-							HTML 
+							Computer vision: 
 						</a> 
 					</div> 
-					<p> 
-						HTML stands for HyperText 
-						Markup Language. It is used 
-						to design web pages using 
-						the markup language. 
+					<p class="decri"> 
+						This AI technology enables computers and systems to derive 
+            meaningful information from digital images, videos and other 
+            visual inputs, and based on those inputs, it can take action. 
+            This ability to provide recommendations distinguishes it 
+            from image recognition tasks. Powered by convolutional neural 
+            networks, computer vision has applications within photo tagging 
+            in social media, radiology imaging in healthcare, 
+            and self-driving cars within the automotive industry.
 					</p> 
 				</div> 
 
 				<div class="box"> 
 					<div class="topic"> 
 						<a href="" target="_blank"> 
-							Javascript 
+							Customer service: 
 						</a> 
 					</div> 
-					<p> 
-						JavaScript (JS) is the most 
-						popular lightweight, interpreted 
-						compiled programming language. 
+					<p class="decri"> 
+            Online virtual agents are replacing human agents along 
+            the customer journey. They answer frequently asked 
+            questions (FAQs) around topics, like shipping, or provide 
+            personalized advice, cross-selling products or suggesting 
+            sizes for users, changing the way we think about customer 
+            engagement across websites and social media platforms. 
+            Examples include messaging bots on e-commerce sites with 
+            virtual agents, messaging apps, such as Slack and Facebook 
+            Messenger, and tasks usually done by virtual assistants and 
+            voice assistants.
 					</p> 
 				</div> 
 			</div> 
 		</div> 
-	</section> 
+	</div> 
 
-	<section class="contact" id="contact"> 
+	<div class="contact" id="contact"> 
 		<div class="content"> 
 			<div class="title"><span>Sign Up</span></div> 
 			<div class="contactMenu"> 
@@ -171,20 +183,19 @@
 				</div> 
 			</div> 
 		</div> 
-	</section> 
+	</div> 
 	<!-- Footer section -->
 	<footer> 
 		<div class="footer"> 
 			<span> 
 				Created By 
-				<a href="https://www.geeksforgeeks.org/"
-					target="_blank"> 
-					GeeksforGeeks 
+				<a href="#Home"> 
+					Anagha
 				</a> 
 			</span> 
 		</div> 
 	</footer> 
-	<script src="index.js"></script> 
+	<script src="script.js"></script> 
 </body> 
 
 </html>

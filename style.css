@@ -118,6 +118,9 @@ nav .sideMenuButton {
 	margin-left: 50px; 
 } 
 
+
+  
+
 .line { 
 	display: flex; 
 	justify-content: space-between; 
@@ -148,9 +151,21 @@ nav .sideMenuButton {
 a { 
 	text-decoration: none; 
 	color: black; 
+}  
+
+ /* Header content responsive */ 
+ 
+ .side1 p { 
+    font-size: 17px;
+    padding: 10px 0;
+    margin: 10px; 
+} 
+.side2 img { 
+    width: 100%; 
+    height: fit-content;
+   
 } 
 
-/* Header content responsive */
 @media screen and (max-width: 980px) { 
 	.side2 img { 
 		width: 350px; 
@@ -161,7 +176,9 @@ a {
 	} 
 
 	.side1 p { 
-		font-size: 17px; 
+		font-size: 17px;
+        padding: 10px;
+        margin: 10px; 
 	} 
 
 	.line { 
@@ -185,7 +202,10 @@ a {
 
 /* section */
 
-section .topic a { 
+.title {
+    margin-top: 200px;
+}
+ .topic a { 
 	font-size: 25px; 
 	font-weight: 500; 
 	margin-bottom: 10px; 
@@ -204,8 +224,14 @@ section .topic a {
 	border-radius: 12px; 
 	padding: 30px 10px; 
 	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12); 
-	cursor: default; 
+	cursor: default;
+    padding: 10px; 
 } 
+.decri{
+    padding: 10px;
+    margin: 10px;
+}
+
 
 /* Contact Page */
 
